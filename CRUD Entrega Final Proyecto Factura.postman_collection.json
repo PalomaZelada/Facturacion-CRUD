@@ -1,0 +1,478 @@
+{
+	"info": {
+		"_postman_id": "a6bd2ca2-af7d-47dd-8db5-e26ded6523f8",
+		"name": "CRUD Entrega Final Proyecto Factura",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Cliente",
+			"item": [
+				{
+					"name": "Get Cliente",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/obtenerCliente/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"obtenerCliente",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Clientes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/clientes",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Cliente",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"id\":2,\r\n\"nombre\":\"Andres\",\r\n\"apellido\": \"Gomez\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/actualizarCliente",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"actualizarCliente"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Cliente",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"nombre\":\"Ramon\",\r\n\"apellido\": \"Diaz\",\r\n\"dni\": 98765432,\r\n\"direccion\":\"Roman Diaz 1532\",\r\n\"telefono\":555555555\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/crearCliente",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"crearCliente"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Cliente",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/borrarCliente/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"borrarCliente",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Empresa",
+			"item": [
+				{
+					"name": "Get Empresa",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/obtenerEmpresa/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"obtenerEmpresa",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Empresa",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"nombre\":\"Limpiadora Maxima S.A.\",\r\n\"direccion\": \"Antonia Lopez Perez 3300\",\r\n\"rubro\": \"Articulos de Limpieza\",\r\n\"dniEmpresa\": 99662200,\r\n\"telefono\": 123456789\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/crearEmpresa",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"crearEmpresa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Empresa",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"id\": 1,\r\n\"nombre\":\"Limpiadora Nueva S.A.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/actualizarEmpresa",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"actualizarEmpresa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Empresa",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/borrarEmpresa/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"borrarEmpresa",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Empresas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/empresas",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"empresas"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Producto",
+			"item": [
+				{
+					"name": "Get Producto",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/obtenerProducto/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"obtenerProducto",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Producto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"stock\": 600,\r\n\"nombre\": \"Hilo Dental\",\r\n\"marca\": \"Dentix\",\r\n\"detalle\":\"Para cuidado intensivo dental\",\r\n\"precioUnitario\": 130\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/crearProducto",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"crearProducto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Producto",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"id\": 3,\r\n\"precioUnitario\": 120\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/actualizarProducto",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"actualizarProducto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Producto",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/borrarProducto/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"borrarProducto",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Productos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/productos",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"productos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Restar Stock",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\" : 1,\r\n    \"stock\" : 43\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/restarStock",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"restarStock"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Restar Stock Con Error por Validacion",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\" : 1,\r\n    \"stock\" : \"hola\"\r\n    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/restarStock",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"restarStock"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Factura",
+			"item": [
+				{
+					"name": "Get Factura",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/obtenerFactura/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"obtenerFactura",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Factura Por Id Cliente",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/obtenerFacturaPorCliente/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"obtenerFacturaPorCliente",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Factura",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"date\": \"2022-07-29\",\r\n    \"tipoFactura\": \"A\",\r\n    \"cliente\": {\r\n        \"id\": 7\r\n    },\r\n    \"detalleFacturas\": [\r\n        {\r\n          \r\n            \"producto\": {\r\n                \"id\": 1\r\n            },\r\n            \"cantidadProductos\": 700\r\n        },\r\n        {\r\n          \r\n            \"producto\": {\r\n                \"id\": 6\r\n            },\r\n            \"cantidadProductos\": 120\r\n        },\r\n        {\r\n          \r\n            \"producto\": {\r\n                \"id\": 7\r\n            },\r\n            \"cantidadProductos\": 40\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/crearFactura",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"crearFactura"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
